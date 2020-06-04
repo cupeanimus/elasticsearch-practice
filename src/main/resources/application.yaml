@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    hikari:
+      bp-ppc:
+        jdbc-url: jdbc:mysql://localhost/practice?useSSL=false&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+        username: kyle
+        password: kyle1234
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    generate-ddl: true
+    show-sql: false
+    database: mysql
+    open-in-view: false
+
+
+
+---
+spring:
+  elasticsearch:
+    host: search-kyle-test-jritx65a2fzfjmhodco6a6k53u.ap-northeast-2.es.amazonaws.com
